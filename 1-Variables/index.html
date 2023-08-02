@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+<body>
+
+  <script>
+
+    //Ambito global
+    var saludar = "Hola mundo";
+
+    console.log(saludar);
+    console.log(window)
+
+
+    //Ambito bloque
+    let imprimir = "Hello World"
+    console.log(imprimir);
+
+
+
+    //EJEMPLO var:
+    var musica="Rock"
+
+    console.log('Variable musica antes del bloque',musica);
+
+    {
+      var musica="pop"
+      console.log('variable musica dentro del bloque',musica)
+    }
+
+    console.log('Variable musica despues del bloque',musica)
+
+
+
+    //EJEMPLO let:
+    let colores="red"
+
+    console.log('Variable colores antes del bloque',colores);
+
+    {
+      let colores="green"
+      console.log('variable colores dentro del bloque',colores)
+    }
+
+    console.log('Variable colores despues del bloque',colores)
+
+
+
+  </script>
+  
+</body>
+</html>
