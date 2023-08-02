@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadena de texto</title>
+</head>
+<body>
+  <script>
+
+    //Cadenas de texto aka Strings
+    let nombre = "Raul";
+    let apellido = 'Gomez'
+    let imprimir = new String("Hola mundo")
+    let lorem = " Lorem ipsum dolor sit amet consectetur adipiscing elit velit, nulla auctor cubilia molestie est ultricies faucibus, at dui justo feugiat ante commodo sapien."
+
+    //console.log(nombre + apellido + imprimir);  concatenacion
+    console.log(nombre,apellido,imprimir);
+
+    //length: muestra el numero de caracteres de una variable.
+    console.log(
+      nombre.length,
+      apellido.length,
+      imprimir.length
+    )
+
+    //toUpperCase(): transforma a mayusculas.
+    console.log(nombre.toUpperCase());
+
+    //toLowerCase(): transforma a minusculas.
+    console.log(apellido.toLowerCase());
+
+    //includes(): busca si existe o incluye cierto caracter o palabra, devolvera true o false.
+    console.log(lorem.includes("ante"));
+
+    //trim(): quita los espacios en blanco del inicio y final de un texto.
+    console.log(lorem.trim())
+
+    //split(): convierte una cadena de texto en un arreglo mediante un separador(coma, blanco).
+    console.log(lorem.split(" "))
+    console.log(lorem.split(","))
+
+
+
+  </script>
+</body>
+</html>
