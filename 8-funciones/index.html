@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>funciones</title>
+</head>
+<body>
+  
+  <script>
+    // Funciones Declaradas: puede invocarse en cualquier parte del codigo
+    function funcionDeclarada(){
+      console.log("uno"); 
+      console.log("Dos"); 
+      console.log("Tres"); 
+
+    }
+    funcionDeclarada() //invocacion de funcion
+
+
+    function devuleveValor(){
+      let num1 = 2;
+      let num2 = 5;
+
+      let resultado = num1 + num2;
+
+      return resultado
+    }
+    let suma = devuleveValor()
+    console.log(suma)
+
+
+    function imprimir(nombre,edad){
+      console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`)
+    }
+    saludar("Miguel",20)
+
+
+
+    // Funcion Expresada(anonima): no se puede invocar sin antes ser inicializada
+    const funcionExpresada = function(){
+      console.log("Esto es una funcion expresada, es decir, una funcion que se le ha asignado como valor a una variable. y si invocamos esta funcion antes de su definicion JS nos dira 'Can not access, funcionExpresada before initialization'")
+    }
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
