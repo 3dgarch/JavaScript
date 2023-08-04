@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos</title>
+</head>
+<body>
+  <script>
+
+    //Objetos
+    const carro = {
+      marca: 'audi',
+      color: 'negro',
+      placa: 'xcv-165',
+      estado: ["apagado","encendido","arranque"],
+      contacto: {
+        email: 'audi@gmail.com',
+        movil: 989405664
+      },
+      descuento:function(){
+        console.log(`No aplica descuento para la marca ${this.marca}`)
+      }
+    }
+    //acceder al valor de un objeto
+    console.log(carro["marca"]);
+    console.log(carro.estado[2])
+
+    // listar llaves de un objeto
+    console.log(Object.keys(carro))
+
+    // devuelve valores en un arreglo
+    console.log(Object.values(carro))
+
+    // permite saber si un objecto tiene dicha propiedad
+    console.log(carro.hasOwnProperty("marca"))
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>
