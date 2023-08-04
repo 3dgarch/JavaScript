@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arreglos</title>
+</head>
+<body>
+  <script>
+
+    // pos:          0   1     2        3
+    const arreglo = [1, true,"hola",["a","b"]];
+    const colores = ["Rojo","Verde","Azul"];
+
+    // length: devuelve la longitud de un arreglo
+    console.log(arreglo.length);
+
+    // imprimir posicion []
+    console.log(arreglo[2])
+
+    console.log(arreglo[3][1])
+
+    //Array.of: permite llenar elementos
+     const array = Array.of("x","y","z",9,5);
+
+    // fill: llenar todos las posiciones con un valor
+     const descuento = Array(100).fill(false)
+
+    //metodo push(): agrega un elemento al final de un array
+    colores.push("Rojo")
+    console.log(colores)
+
+    //metodo Pop(): quita el elemento final de un array
+    colores.pop();
+
+    // metodo forEach(): rrecorre un arreglo
+    colores.forEach(function(item, index){
+      console.log(`<li id="${index}">${item}</li>`)
+    });
+
+
+     
+     
+
+
+
+
+
+  </script>
+</body>
+</html>
