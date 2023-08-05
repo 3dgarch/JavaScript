@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de  Operadores</title>
+</head>
+<body>
+  <script>
+
+    
+    // OPERADORES ARITMETICOS: + - * / % 
+    
+    let a  =  5+(10-5)*3;
+
+    // modulo: devuelve el residuo
+    let modulo = 5%2;
+
+
+    //OPERADORES RELACIONALES: >, <, >=, <=, ==, ===, !=, !==
+    console.log(8 > 9)   // false
+    console.log(10 < 20) // true
+    console.log(8 >= 9)  // false
+    console.log(7 <= 7)  // true
+
+    /*
+     =    -> asignacion de variable
+     ==   -> comparacion de valores
+     ===  -> comparacion tipo y valor de dato
+    */
+
+    console.log(7 == 7)     // true
+    console.log("7" == 7)   // true
+    console.log(0 == false) // true
+
+
+    console.log(7 === 7)     // true (ambos son numero)
+    console.log("7" === 7)   // false(uno es string y el otro entero)
+    console.log(0 === false) // false(uno es numero y el otro boleano)
+
+
+
+    /* INCREMENTO Y DECREMENTO */
+    let i = 1;
+
+    i = i + 2;
+    i += 2;
+    i *= 2;
+
+    //operador unario: solo cuando se aumenta de uno en uno
+    i++;
+    i--;
+    ++i;
+    --i;
+
+    /* OPERADORES LOGICOS */
+    /*
+      !  -> Not > niega, es decir lo que es falso lo vuelve verdadero y viceversa
+      || -> Or  > cuando tengo 2 o mas consiciones y una sea verdadera el Or validara
+      && -> And > todas las condiciones tienen que ser verdaderas par que And se ejecute
+    */
+
+
+    console.log(!true) // false
+    console.log((9 === 9) || ("9" === 9)); //true
+    console.log((10 === 10) && ("10" === 10)); //false
+    console.log((10 === 10) && ("10" === "10")); //true
+
+
+
+
+  </script>
+</body>
+</html>
