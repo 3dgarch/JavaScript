@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // IF - ELSE
+    let edad = 17
+
+    if(edad > 18){
+      console.log("Eres mayor de edad")
+    }else{
+      console.log("eres menor de edad")
+    }
+
+
+    let  hora = 5;
+    if(hora >= 0 && hora <=5){
+      console.log("dejame dormir")
+    }else if(hora >= 6 && hora <= 11){
+      console.log("buenos dias")
+    }else if(hora >= 12 && hora <=18){
+      console.log("Buenas tardes")
+    }else{
+      console.log("Buenas noches")
+    }
+
+    /* OPERADOR TERNRIO */
+    let eresMayor = (edad >= 18)
+      ? "Eres mayor de edad"
+      : "eres menor de edad";
+    console.log(eresMayor)
+
+
+    /* SWITCH -  CASE */
+
+    let dia = 2;
+
+    switch(dia){
+      case 0:
+        console.log("domingo");
+        break;
+      case 1:
+        console.log("lunes");
+        break;
+      case 2:
+        console.log("Martes");
+        break;
+      case 3:
+        console.log("Miercoles");
+        break;
+      case 4:
+        console.log("Jueves");
+        break;
+      case 5:
+        console.log("Viernes");
+        break;
+      case 6:
+        console.log("Sabado");
+        break;
+      default:
+        console.log("El dia no existe");
+        break;
+
+    }
+
+
+  </script>
+</body>
+</html>
