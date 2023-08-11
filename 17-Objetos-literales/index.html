@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let nombre = "kenai",
+      edad = 10;
+
+
+    const perro = {
+      nombre: nombre,
+      edad: edad,
+      ladrar: function(){
+        console.log("guauu guauu!!")
+      }
+    }
+    console.log(perro);
+    perro.ladradr();
+
+
+    // nueva forma de declarar objetos literales(> ecmascript 6)
+    const dog = {
+      nombre,
+      edad,
+      raza: "pitbull",
+      ladrar(){
+        console.log("guauu!")
+      }
+    }
+  </script>
+</body>
+</html>
