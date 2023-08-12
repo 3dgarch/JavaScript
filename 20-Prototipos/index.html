@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // POO
+
+    /*
+      Clases    -> Modelo a seguir.
+      Objetos   -> Es una instancia de una clase
+      Atributos -> Es una caracteristica o propiedad del objeto(son variables dentro de un objeto)
+      Metodos   -> Son las acciones que un objeto puede realizar(son funciones dentro de un objeto)
+    */
+
+    
+
+
+    //funcion constructora
+    function Animal(nombre,genero){
+      //atributos
+      this.nombre = nombre;
+      this.genero = genero;
+
+      //metodos
+      /*this.sonar = function(){
+        console.log("sonar!");
+      };
+      this.saludar = function(){
+        console.log("Hola!");
+      };
+      */
+    }
+
+    //Metodos:agregados al prototipo de la funcion constructora(para evitar duplicar los metodos en las instancias)
+    Animal.prototype.sonar = function(){
+      console.log("sonar!");
+    };
+    Animal.prototype.saludar = function(){
+      console.log("Hola!");
+    };
+
+
+    //instancia
+    const perro = new Animal("Snoopy","Macho"),
+      gato = new Animal("Jerry","Macho");
+
+    console.log(perro);
+    console.log(gato);
+
+    
+
+  </script>
+</body>
+</html>
