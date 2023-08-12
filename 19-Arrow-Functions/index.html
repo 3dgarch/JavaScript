@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    //funcion flecha
+    const saludar = ()=>{
+      console.log("Hola")
+    };
+
+    const imprimir = nombre => console.log(`bienvenido ${nombre}`);
+
+    const sumar = (a,b)=> a+b
+
+
+
+    const numeros = [1,2,3,4,5,6,7,8]
+
+    numeros.forEach((num, pos)=>{
+      console.log(`El numero: ${num} esta en la posicion: ${pos}`)
+    })
+
+
+    //this: hace referencia a un contexto de la posicion
+    function animal(){
+      console.log(this)
+    }
+
+    const mascota = {
+      nombre: 'Kenai',
+      animal: 'perro',
+      sonido:function(){     //function: respeta el contexto donde se encuentra(objeto mascota)
+        console.log(this)
+      },
+      ladrar:()=>{           //arrow function: hace referencia al contexto global(salta su contexto actual y reconoce a su objeto padre donde ha sido declarado el objeto mascota)
+        console.log(this)
+      },
+      jugar(){              //nueva expresion: reconoce contexto donde se encuntra(objeto mascota)
+        console.log(this)
+      }
+
+
+    }
+
+    mascota.sonido();
+    mascota.ladrar();
+
+
+
+  </script>
+</body>
+</html>
