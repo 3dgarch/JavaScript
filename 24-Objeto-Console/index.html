@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log(console);
+
+    // error
+    console.error("Esto es un error");
+
+    // aviso
+    console.warn("Esto es una alerta");
+
+    // informacion
+    console.info("Esto es un mensaje informativo")
+
+
+
+
+    let nombre = "Jhon",
+      apellidos = "Suarez",
+      edad = 30
+    
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+    
+    // comodines > %s = string, %d = digito
+    console.log(`Hola mi nombre es %s y tengo %d años.`,nombre,edad);
+
+    //limpiar consola
+    console.clear();
+
+    // representa un elemento en objeto
+    console.dir(window);
+    console.dir(document);
+
+    // agrupacion
+    console.groupCollapsed("cursos de programcacion web");
+    console.log("curso html");
+    console.log("curso css")
+    console.log("curso javascript");
+    console.log("curso Node.js")
+    console.groupEnd();
+
+    // tabla
+    console.log(console)
+    console.table(Object.entries(console).sort());
+
+    const vocales = ["a","e","i","o","u"];
+    console.table(vocales);
+
+
+    // tiempo 
+    console.time("Cuanto tiempo tarda mi codigo")
+
+    const arreglo = Array(100);
+
+    for(let i =0; i<arreglo.length; i++){
+      arreglo[i] = i;
+    }
+
+    console.timeEnd("Cuanto tiempo tarda mi codigo")
+
+
+    // conteo
+    for(let i = 0; i < arreglo.length; i++){
+      console.count("codigo for");
+      console.log(i);
+    }
+
+    // prueba
+    let x = 1,
+      y = 2,
+      pruebaxy = "Se espera que X siempre sea menor que Y";
+
+    console.assert(x<y, {x,y,pruebaxy});
+
+
+  </script>
+</body>
+</html>
