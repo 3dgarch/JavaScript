@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+  class Animal{
+    constructor(nombre,genero,raza){
+      this.nombre = nombre;
+      this.genero = genero;
+      this.raza = null;
+
+    }
+    // metodo static
+    static imprimir(){
+      console.log("soy un animal")
+    }
+
+    //setters and getters > permiten establecer y obtener valores de atributos de nuestra clase
+    get getRaza(){
+      return this.raza;
+    }
+    set setRaza(raza){
+      this.raza = raza;
+    }
+
+  }    
+  Animal.imprimir()
+
+  const perro = new Animal("Tobi","macho","pitbull");
+
+  console.log(perro.getRaza)
+  perro.setRaza = "Gran Danes"
+
+  console.log(perro.getRaza)
+  </script>
+</body>
+</html>
