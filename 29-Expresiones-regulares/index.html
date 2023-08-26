@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let cadena = "lorem ipsum dolor sit amet consectetur lorem"
+
+
+    let exReg = RegExp("lorem","ig"); // i : ignora mayusculas y minusculas, g: busca todas las coincidencias
+    
+
+    //devuelve booleam
+    console.log(exReg.test(cadena));
+
+    //devuelve un arreglo
+    console.log(exReg.exec(cadena));
+
+
+
+    let text = "Hello, welcome to chanel 1 2 3 lorem"
+    let exReg2 = /[0-9]/g;
+    let exReg3 = /lorem{2}/ig;
+
+    console.log(exReg2.exec(text));
+    console.log(exReg3.exec(text));
+
+
+
+
+
+  </script>
+</body>
+</html>
