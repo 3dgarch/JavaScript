@@ -31,3 +31,6 @@ for(let propiedad in persona){
   console.log(propiedad);
   console.log(persona[propiedad]);
 }
+
+// para ver los simbols
+console.log(Object.getOwnPropertySymbols(persona));
